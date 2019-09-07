@@ -10,7 +10,7 @@ public class ThreadDaemon extends Thread{
 	public void run() {
 		for (int i = 0; i < 10; i++) {
 			try {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
