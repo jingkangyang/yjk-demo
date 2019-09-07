@@ -1,6 +1,6 @@
 package com.yjk.prj.demo.thread;
 
-/**守护线程
+/**守护线程Demo
  * @author yangjingkang
  * 2019年9月8日 上午12:12:45
  */
