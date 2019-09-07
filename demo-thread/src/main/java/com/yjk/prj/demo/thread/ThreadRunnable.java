@@ -1,6 +1,6 @@
 package com.yjk.prj.demo.thread;
 
-/**实现Runable创建线程
+/**实现Runable创建线程Demo
  * @author yangjingkang
  * 2019年9月8日 上午12:13:36
  */
