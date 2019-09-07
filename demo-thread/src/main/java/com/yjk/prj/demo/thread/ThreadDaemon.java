@@ -37,5 +37,4 @@ public class ThreadDaemon extends Thread{
 		});
 		th1.start();
 	}
-
 }
