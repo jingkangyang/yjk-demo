@@ -7,5 +7,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>demo-thread</module>
+    <module>demo-designPattern</module>
   </modules>
 </project>
