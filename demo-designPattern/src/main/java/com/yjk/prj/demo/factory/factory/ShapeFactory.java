@@ -3,6 +3,7 @@
  */
 package com.yjk.prj.demo.factory.factory;
 
+import com.yjk.prj.demo.factory.color.Color;
 import com.yjk.prj.demo.factory.shape.Circle;
 import com.yjk.prj.demo.factory.shape.Rectangle;
 import com.yjk.prj.demo.factory.shape.Shape;
@@ -12,8 +13,9 @@ import com.yjk.prj.demo.factory.shape.Square;
  * @author yangjingkang
  * 2019年9月8日 下午4:25:27
  */
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory{
 	
+	@Override
 	public Shape getShape(String shapeType) {
 		
 		if(shapeType == null)
@@ -28,4 +30,10 @@ public class ShapeFactory {
 		}
 		return null;
 	}
+
+	@Override
+	public Color getColor(String color) {
+		return null;
+	}
+
 }
