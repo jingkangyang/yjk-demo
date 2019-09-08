@@ -15,5 +15,9 @@ public abstract class AbstractFactory {
 	public abstract Color getColor(String colorType);
 	
 	public abstract Shape getShape(String shapeType);
+	
+	public String newMethod() {
+		return "抽象类新增方法";
+	}
 
 }

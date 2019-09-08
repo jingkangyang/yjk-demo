@@ -36,5 +36,8 @@ public class FactoryPatternTest {
 		AbstractFactory colorFactory = FactoryProducer.getFactory("COLOR");
 		Color colorRed = colorFactory.getColor("RED");
 		colorRed.fill();
+		
+		//抽象类新增方法
+		System.out.println(colorFactory.newMethod());
 	}
 }
