@@ -8,5 +8,6 @@
   <modules>
     <module>demo-thread</module>
     <module>demo-designPattern</module>
+    <module>demo-java8</module>
   </modules>
 </project>
