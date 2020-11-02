@@ -12,6 +12,7 @@
     <module>demo-annotation</module>
     <module>demo-aop</module>
     <module>demo-io</module>
+    <module>demo-encryptAndDecrypt</module>
   </modules>
 
   <parent>
