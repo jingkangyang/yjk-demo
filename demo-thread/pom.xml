@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.yjk.prj</groupId>
-    <artifactId>YjkProject</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>yjk-demo</artifactId>
+    <groupId>com.yjk.demo</groupId>
+    <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.yjk.prj</groupId>
+  <groupId>com.yjk.demo</groupId>
   <artifactId>demo-thread</artifactId>
   <version>1.0.0</version>
   <name>demo-thread</name>
