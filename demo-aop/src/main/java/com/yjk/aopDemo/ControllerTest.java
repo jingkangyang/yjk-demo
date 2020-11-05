@@ -10,7 +10,7 @@ public class ControllerTest {
     @Autowired
     private PointCutMethod pointCutMethod;
 
-    @GetMapping(value = "/test")
+    @GetMapping(value = "/testAop")
     public void test() {
         pointCutMethod.pointCutMethod();
     }
