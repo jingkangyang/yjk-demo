@@ -17,15 +17,15 @@
     <module>demo-starter</module>
   </modules>
 
+    <properties>
+        <org.springframework.version>4.3.19.RELEASE</org.springframework.version>
+    </properties>
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.1.1.RELEASE</version>
   </parent>
-
-    <properties>
-        <org.springframework.version>4.3.19.RELEASE</org.springframework.version>
-    </properties>
 
   <dependencies>
       <dependency>
@@ -45,13 +45,11 @@
           <artifactId>junit</artifactId>
           <version>4.12</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
       <dependency>
           <groupId>com.alibaba</groupId>
           <artifactId>fastjson</artifactId>
           <version>1.2.74</version>
       </dependency>
-
   </dependencies>
 
 </project>

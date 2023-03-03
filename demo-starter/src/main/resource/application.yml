@@ -1,0 +1,12 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: yjk-demo
+
+logging:
+  path: ../logs #日志文件路径
+  file: ${spring.application.name}_${server.port}.log
+  level:
+    root: info
