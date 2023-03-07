@@ -17,12 +17,8 @@ public class MyCallable implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         logger.info(new Date() + "-线程id:" + Thread.currentThread().getId()+","+"线程名:" + Thread.currentThread().getName() + " start...");
-        int sum = 0;
-        for (int i = 0; i < 10; i++) {
-            sum += i;
-        }
         Thread.sleep(3000);
         logger.info(new Date() + "-线程id:" + Thread.currentThread().getId()+","+"线程名:" + Thread.currentThread().getName() + " end...");
-        return sum;
+        return 1;
     }
 }

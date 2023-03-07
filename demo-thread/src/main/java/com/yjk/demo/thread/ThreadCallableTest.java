@@ -16,11 +16,14 @@ public class ThreadCallableTest {
     private static final Logger logger = LoggerFactory.getLogger(ThreadCallableTest.class);
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        MyCallable myCallable = new MyCallable();
-        FutureTask<Integer> futureTask = new FutureTask<>(myCallable);
-        new Thread(futureTask).start();
-        // get会阻塞线程
-        Integer sum = futureTask.get();
-        logger.info(Thread.currentThread().getId() + "," + Thread.currentThread().getName() + "sum=" + sum);
+        Integer sum = 0;
+        for (int i = 0; i < 10; i++) {
+            MyCallable myCallable = new MyCallable();
+            FutureTask<Integer> futureTask = new FutureTask<>(myCallable);
+            new Thread(futureTask).start();
+            // get会阻塞线程
+            sum += futureTask.get();
+        }
+        logger.info(Thread.currentThread().getId() + "-" + Thread.currentThread().getName() + ",sum=" + sum);
     }
 }
