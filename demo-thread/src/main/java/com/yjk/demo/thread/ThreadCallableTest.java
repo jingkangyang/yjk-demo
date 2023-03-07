@@ -17,8 +17,8 @@ public class ThreadCallableTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Integer sum = 0;
+        MyCallable myCallable = new MyCallable();
         for (int i = 0; i < 10; i++) {
-            MyCallable myCallable = new MyCallable();
             FutureTask<Integer> futureTask = new FutureTask<>(myCallable);
             new Thread(futureTask).start();
             // get会阻塞线程
