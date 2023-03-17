@@ -9,7 +9,7 @@ public class DemoEntity {
 
     private Long id;
 
-    @TestAnnotation(value = "注解属性")
+    @TestAnnotation(value = "字段注解属性")
     private String name;
 
 }

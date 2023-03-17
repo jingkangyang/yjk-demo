@@ -1,8 +1,8 @@
 package reflection;
 
 import org.springframework.util.ReflectionUtils;
-
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
@@ -17,8 +17,25 @@ public class ReflectionUtilsTest {
         TestAnnotation annotation = nameField.getAnnotation(TestAnnotation.class);
         System.out.println(annotation.value());
 
-        Method testMethod = ReflectionUtils.findMethod(TestService.class, "testMethod");
+        Method testMethod = ReflectionUtils.findMethod(TestServiceImpl.class, "testMethod", new Class[]{String.class});
+        TestAnnotation methodAnnotation = testMethod.getAnnotation(TestAnnotation.class);
+        System.out.println(methodAnnotation.value());
+        try {
+            TestService testService = new TestServiceImpl();
+            Object result = testMethod.invoke(testService, "param");
+            System.out.println("返回参数：" + result.toString());
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
 
+        ReflectionUtils.doWithFields(DemoEntity.class, field -> {
+            System.out.println(field.getName());
+        });
+        ReflectionUtils.doWithMethods(TestServiceImpl.class, method -> {
+            System.out.println(method.getName());
+        });
     }
 
 }
