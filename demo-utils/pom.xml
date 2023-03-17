@@ -9,5 +9,4 @@
     </parent>
     <groupId>com.yjk.demo</groupId>
     <artifactId>demo-utils</artifactId>
-    <version>1.0.0</version>
 </project>

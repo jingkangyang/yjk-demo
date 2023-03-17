@@ -4,9 +4,20 @@ server:
 spring:
   application:
     name: yjk-demo
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/spd?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+      username: root
+      password: 123456
 
 logging:
   path: ../logs #日志文件路径
   file: ${spring.application.name}_${server.port}.log
   level:
     root: info
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

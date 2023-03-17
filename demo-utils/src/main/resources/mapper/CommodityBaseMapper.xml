@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yjk.demo.mpGeneratorUi.mapper.CommodityBaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yjk.demo.mpGeneratorUi.entity.CommodityBase">
+        <id column="id" property="id" />
+        <result column="commodity_code" property="commodityCode" />
+        <result column="commodity_name" property="commodityName" />
+        <result column="commodity_udid" property="commodityUdid" />
+        <result column="commodity_initial_letter" property="commodityInitialLetter" />
+        <result column="commodity_model" property="commodityModel" />
+        <result column="commodity_spec" property="commoditySpec" />
+        <result column="commodity_type_id" property="commodityTypeId" />
+        <result column="register_name" property="registerName" />
+        <result column="register_code" property="registerCode" />
+        <result column="expiration" property="expiration" />
+        <result column="storage_condition_id" property="storageConditionId" />
+        <result column="certificate_type_id" property="certificateTypeId" />
+        <result column="package_conversion_coefficient" property="packageConversionCoefficient" />
+        <result column="package_unit_id" property="packageUnitId" />
+        <result column="status" property="status" />
+        <result column="manufacturer_name" property="manufacturerName" />
+        <result column="production_license" property="productionLicense" />
+        <result column="is_relate" property="isRelate" />
+        <result column="is_recommend" property="isRecommend" />
+        <result column="pre_commodity_code" property="preCommodityCode" />
+        <result column="pre_supplier_enterprise_code" property="preSupplierEnterpriseCode" />
+        <result column="data_source" property="dataSource" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user" property="createUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="update_user" property="updateUser" />
+        <result column="is_delete" property="isDelete" />
+        <result column="other_udid" property="otherUdid" />
+        <result column="expiry_alarm_days" property="expiryAlarmDays" />
+        <result column="fee_control" property="feeControl" />
+        <result column="expiration_unit" property="expirationUnit" />
+        <result column="is_need_stock" property="isNeedStock" />
+        <result column="common_name" property="commonName" />
+        <result column="product_group_id" property="productGroupId" />
+        <result column="purchase_type_id" property="purchaseTypeId" />
+        <result column="is_reuse" property="isReuse" />
+        <result column="reuse_times" property="reuseTimes" />
+        <result column="merchandise_code" property="merchandiseCode" />
+        <result column="is_deposit_cabinet" property="isDepositCabinet" />
+        <result column="medical_code" property="medicalCode" />
+        <result column="jsyc_goods_id" property="jsycGoodsId" />
+        <result column="source_data_id" property="sourceDataId" />
+        <result column="manufacturer_code" property="manufacturerCode" />
+        <result column="classify_id" property="classifyId" />
+        <result column="account_type_id" property="accountTypeId" />
+        <result column="is_cold_chain" property="isColdChain" />
+        <result column="is_implantable" property="isImplantable" />
+        <result column="purchase_platform_product_id" property="purchasePlatformProductId" />
+        <result column="medical_consumables_code" property="medicalConsumablesCode" />
+        <result column="purchase_quantity" property="purchaseQuantity" />
+        <result column="common_name_initial_letter" property="commonNameInitialLetter" />
+        <result column="is_test_reagent" property="isTestReagent" />
+        <result column="is_batch_reagent" property="isBatchReagent" />
+        <result column="reagent_valid_days" property="reagentValidDays" />
+        <result column="biz_status" property="bizStatus" />
+        <result column="fixed_packet" property="fixedPacket" />
+        <result column="fixed_packet_type" property="fixedPacketType" />
+        <result column="is_high_consumable" property="isHighConsumable" />
+        <result column="medical_type_id" property="medicalTypeId" />
+        <result column="is_purchase_quantity" property="isPurchaseQuantity" />
+    </resultMap>
+</mapper>
